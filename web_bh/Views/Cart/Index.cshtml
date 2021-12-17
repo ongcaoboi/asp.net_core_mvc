@@ -1,0 +1,123 @@
+@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+@section css {
+<link rel="stylesheet" href="~/css/cart.css">
+}
+@section Scripts {
+<script src="~/js/cart.js"></script>
+}
+<div class="path">
+    <a asp-controller="Home" asp-action="Index">Trang chủ </a>
+    <a asp-controller="Cart" asp-action="Index">| Giỏ hàng </a>
+</div>
+<div class="cart">
+    <div class="cart__body">
+        <p id="numArr" hidden="hidden">2</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <tr id="item-0">
+                    <td>1</td>
+                    <td class="cart__product">
+                        <img src="~/img/ban-phim.jpg" alt="">
+                        <a href="">Bàn phím ek</a>
+                    </td>
+                    <td>
+                        <p id="price-item-0">200,000</p>
+                        <p> VND</p>
+                    </td>
+                    <td class="cart__quantity">
+                        <div class="product__quantity">
+                            <button class="btn btn-strest" onclick="quantity(0,-1)">-</button>
+                            <input name="quantity" id="quantity-0" type="number" value="1" min="1" max="10">
+                            <button class="btn btn-strest" onclick="quantity(0,1)">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <p id="sum-item-0"></p>
+                        <p> VND</p>
+                    </td>
+                    <td>
+                        <button class="btn btn-strest" onclick="removeCartItem(0)">x</button>
+                    </td>
+                </tr>
+                <tr id="item-1">
+                    <td>2</td>
+                    <td class="cart__product">
+                        <img src="~/img/ban-phim.jpg" alt="">
+                        <a href="">Bàn phím ek</a>
+                    </td>
+                    <td>
+                        <p id="price-item-1">200,000</p>
+                        <p> VND</p>
+                    </td>
+                    <td class="cart__quantity">
+                        <div class="product__quantity">
+                            <button class="btn btn-strest" onclick="quantity(1,-1)">-</button>
+                            <input name="quantity" id="quantity-1" type="number" value="1" min="1" max="10">
+                            <button class="btn btn-strest" onclick="quantity(1,1)">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        <p id="sum-item-1"></p>
+                        <p> VND</p>
+                    </td>
+                    <td>
+                        <button class="btn btn-strest" onclick="removeCartItem(1)">x</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="cart__bottom">
+        <a asp-controller="Product" asp-action="Index">
+            << Tiếp tục mua hàng</a>
+                <a asp-controller="Checkout" asp-action="Index">Thanh toán ></a>
+    </div>
+</div>
+<div class="right">
+    <h3>TÓM TẮT ĐƠN HÀNG</h3>
+    <h4>Chi phí đơn hàng = Giá trị đơn hàng + phí vận chuyển + Thuế</h4>
+    <table>
+        <tbody>
+            <tr>
+                <td>Giá trị đơn hàng</td>
+                <td>
+                    <p id="sum-price"></p>
+                    <p> VND</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Phí vận chuyển nhanh</td>
+                <td>
+                    <p id="shipping-price">40,000</p>
+                    <p> VND</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Thuế</td>
+                <td>
+                    <p id="tax">3</p>
+                    <p>%</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Tổng chi phí</td>
+                <td>
+                    <p id="price"></p>
+                    <p> VND</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

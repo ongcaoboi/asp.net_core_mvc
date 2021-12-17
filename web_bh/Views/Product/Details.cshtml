@@ -1,0 +1,135 @@
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+@section css {
+<link rel="stylesheet" href="~/css/productDetails.css">
+}
+@section Scripts {
+<script src="~/js/productDetails.js"></script>
+}
+<div class="main">
+    <div class="left">
+        <div class="list__img">
+            <img src="~/img/ban-phim.jpg" alt="">
+            <img src="~/img/ban-phim.jpg" alt="">
+            <img src="~/img/ban-phim.jpg" alt="">
+            <img src="~/img/ban-phim.jpg" alt="">
+        </div>
+        <img src="~/img/ban-phim.jpg" alt="">
+    </div>
+    <div class="right">
+        <div class="path">
+            <a asp-controller="Home" asp-action="Index">Trang chủ </a>
+            <a asp-controller="Product" asp-action="Index">| Sản phẩm </a>
+            <a href="">| Bàn phím </a>
+        </div>
+        <h1>Bàn phím ek</h1>
+        <h3>Giá</h3>
+        <p>500,000 VDN</p>
+        <h3>Số lượng</h3>
+        <div class="product__quantity">
+            <button onclick="quantity(-1)">-</button>
+            <input name="quantity" id="quantity" type="number" value="1" min="1" max="10">
+            <button onclick="quantity(1)">+</button>
+        </div>
+        <button class="btn btn-green">Thêm vào giỏ hàng</button>
+        <button class="btn btn-strest">Xem giỏ hàng</button>
+    </div>
+</div>
+<div class="product__info">
+    <div class="tab__list">
+        <button id="btn-description" class="tablinks btn btn-strest" onclick="openTab('description')">Chi tiết sản
+            phẩm</button>
+        <button id="btn-shipping" class="tablinks btn btn-strest" onclick="openTab('shipping')">Thông tin vận
+            chuyển</button>
+    </div>
+    <hr>
+    <div id="description" class="tab__content">
+        <h3>Chi tiết</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente doloremque consequuntur quam odit enim
+            dolore eos, vel provident possimus velit atque veritatis tempora maxime laudantium ullam sint quia assumenda
+            voluptate.</p>
+    </div>
+    <div id="shipping" class="tab__content">
+        <h3>Vận chuyển</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quod mollitia nesciunt blanditiis at! Nesciunt,
+        neque laudantium officia rerum doloremque nemo? Minima minus ut tempore. Nulla praesentium cumque repellendus
+        ratione!
+    </div>
+    <hr>
+</div>
+<div class="category__item">
+    <h2>Sản phẩm liên quan</h2>
+    <div class="row">
+        <div class="row__item">
+            <div class="row__item--img">
+                <img src="~/img/ban-phim.jpg" alt="Ảnh bàn phím">
+                <div class="product__hover">
+                    <a href="">Xem</a>
+                    <a href=""><img src="~/img/cart.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <p>Bàn phím</p>
+                <a href="">Bàn phím ek</a>
+                <h2>500,000 VND</h2>
+            </div>
+        </div>
+        <div class="row__item">
+            <div class="row__item--img">
+                <img src="~/img/ban-phim.jpg" alt="Ảnh bàn phím">
+                <div class="product__hover">
+                    <a href="">Xem</a>
+                    <a href=""><img src="~/img/cart.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <p>Bàn phím</p>
+                <a href="">Bàn phím ek</a>
+                <h2>500,000 VND</h2>
+            </div>
+        </div>
+        <div class="row__item">
+            <div class="row__item--img">
+                <img src="~/img/ban-phim.jpg" alt="Ảnh bàn phím">
+                <div class="product__hover">
+                    <a href="">Xem</a>
+                    <a href=""><img src="~/img/cart.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <p>Bàn phím</p>
+                <a href="">Bàn phím ek</a>
+                <h2>500,000 VND</h2>
+            </div>
+        </div>
+        <div class="row__item">
+            <div class="row__item--img">
+                <img src="~/img/ban-phim.jpg" alt="Ảnh bàn phím">
+                <div class="product__hover">
+                    <a href="">Xem</a>
+                    <a href=""><img src="~/img/cart.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <p>Bàn phím</p>
+                <a href="">Bàn phím ek</a>
+                <h2>500,000 VND</h2>
+            </div>
+        </div>
+        <div class="row__item">
+            <div class="row__item--img">
+                <img src="~/img/ban-phim.jpg" alt="Ảnh bàn phím">
+                <div class="product__hover">
+                    <a href="">Xem</a>
+                    <a href=""><img src="~/img/cart.png" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <p>Bàn phím</p>
+                <a href="">Bàn phím ek</a>
+                <h2>500,000 VND</h2>
+            </div>
+        </div>
+    </div>
+</div>
