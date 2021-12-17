@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Nhúng các file css cho trang web -->
+  <link rel="stylesheet" href="~/css/main.css" />
+  <link rel="stylesheet" href="~/css/home.css" />
+  @RenderSectionAsync("css", required: false)
+<!--  -->
+  <title>@ViewData["Title"] | PN Shop</title>
+</head>
+
+<body>
+  <div class="account" id="login">
+    <div>
+      <div></div>
+      <button class="btn btn-strest" onclick="hideLogin()">x</button>
+    </div>
+    <form action="">
+      <h1>Đăng nhập</h1>
+      <input type="text" placeholder="Tài khoản" name="name">
+      <input type="password" placeholder="*******" name="pass">
+      <div>
+        <input id="checkSave" type="checkbox"><label for="checkSave">Lưu đăng nhập</label>
+      </div>
+      <input type="submit" class="btn btn-green" value="Đăng nhập">
+    </form>
+  </div>
+  <div class="account" id="register">
+    <div>
+      <div></div>
+      <button class="btn btn-strest" onclick="hideRegister()">x</button>
+    </div>
+    <form action="">
+      <h1>Register</h1>
+      <input type="text" placeholder="Tài khoản" name="name">
+      <input type="password" placeholder="Mật khẩu" name="pass">
+      <input type="password" placeholder="Nhập lại mật khẩu" name="pass">
+      <input type="text" placeholder="Họ tên" name="name">
+      <input type="text" placeholder="Số điện thoại" name="name">
+      <input type="text" placeholder="Email" name="name">
+      <input type="submit" class="btn btn-green" value="Đăng ký">
+    </form>
+  </div>
+  <div class="account" id="repass">
+    <div>
+      <div></div>
+      <button class="btn btn-strest" onclick="hideRepass()">x</button>
+    </div>
+    <form action="">
+      <h1>Đổi mật khẩu</h1>
+      <input type="text" placeholder="Tài khoản" name="name">
+      <input type="password" placeholder="Nhập mật khẩu cũ" name="pass">
+      <input type="password" placeholder="Nhập mật khẩu mới" name="pass">
+      <input type="password" placeholder="Nhập lại mật khẩu mới" name="pass">
+      <input type="submit" class="btn btn-green" value="Đổi mật khẩu">
+    </form>
+  </div>
+  <button id="btn_go_to_top">Top</button>
+  <a asp-controller="Cart" asp-action="Index" class="btn__cart">
+    <img src="~/img/cart.png" alt="">
+    <span>12</span>
+  </a>
+<!-- Bắt đầu phần menu header -->
+  <nav class="header">
+    <a asp-controller="Home" asp-action="Index">PN Shop</a>
+    <div class="header__right">
+      <div>
+        <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+        <span></span>
+      </div>
+      <div id="list-category">
+        <a asp-controller="Product" asp-action="Index">Danh mục</a>
+        <span></span>
+        <div class="header__list">
+          <ul>
+            <li>
+              <a href="">Bàn phím</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="">Chuột</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="">Tai nghe</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="">Webcam</a>
+              <span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a asp-controller="Cart" asp-action="Index">Giỏ hàng</a>
+        <span></span>
+      </div>
+      <div>
+        <a asp-controller="Contact" asp-action="Index">Liên hệ</a>
+        <span></span>
+      </div>
+      <div id="list-account">
+        <a>Tài khoản</a>
+        <span></span>
+        <div class="header__list">
+          <ul>
+            <li>
+              <a onclick="showLogin()">Đăng nhập</a>
+              <span></span>
+            </li>
+            <li>
+              <a onclick="showRegister()">Đăng ký</a>
+              <span></span>
+            </li>
+            <li>
+              <a asp-controller="MyOrder">Đơn hàng</a>
+              <span></span>
+            </li>
+            <li>
+              <a onclick="showRepass()">Đổi mật khẩu</a>
+              <span></span>
+            </li>
+            <li>
+              <a onclick="">Đăng xuất</a>
+              <span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="list-search">
+        <a>Tìm kiếm</a>
+        <span></span>
+        <form action="#" class="header__search" method="post">
+          <input class="search__content" type="text" name="search-content" maxlength="200">
+          <input type="submit" value="Tìm">
+        </form>
+      </div>
+    </div>
+  </nav>
+<!-- Kết thúc phần menu header -->
+
+<!-- Mở đầu phần nội dung trang web -->
+  <div class="container">
+    @RenderBody()
+  </div>
+<!-- Kết thúc phần nội dung trang web -->
+
+<!-- Mở đầu phần footer -->
+  <footer class="footer">
+    <div class="footer__item">
+      <h2>Giới thiệu</h2>
+      <p>Website chuyên cung cấp các phụ kiện máy tính</p>
+    </div>
+    <div class="footer__item">
+      <h2>Sản phẩm</h2>
+      <div>
+        <a href="">Bàn phím</a>
+        <a href="">Tai nghe</a>
+        <a href="">Chuột</a>
+      </div>
+    </div>
+    <div class="footer__item">
+      <h2>Liên hệ</h2>
+      <div>
+        <p>Địa chỉ: <a href="">170 An Dương Vương, TP Quy Nhơn, Bình Định</a></p>
+        <p>SĐT: <a href="tel:0987654321">0987654321</a></p>
+        <p>Fanpage: <a href="https://www.facebook.com/dhquynhon" target="_blank">https://www.facebook.com/dhquynhon</a></p>
+      </div>
+    </div>
+  </footer>
+<!-- Kết thúc phần footer -->
+  <!-- Nhúng các file javascript -->
+  <script src="~/js/script.js"></script>
+  <script src="~/js/index.js"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

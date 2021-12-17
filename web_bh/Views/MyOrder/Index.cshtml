@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = "Đơn hàng";
+}
+@section css {
+<link rel="stylesheet" href="~/css/myOrder.css">
+}
+@section Scripts {
+<script src="~/js/myOrder.js"></script>
+}
+<div>
+    <h2>DANH SÁCH ĐƠN HÀNG CỦA TÔI</h2>
+    <div></div>
+</div>
+<div class="container__body">
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>HỌ TÊN</th>
+                <th>SĐT</th>
+                <th>TỔNG TIỀN</th>
+                <th>THANH TOÁN</th>
+                <th>TRẠNG THÁI</th>
+                <th>HÌNH THỨC</th>
+                <th>NGÀY TẠO</th>
+                <th>CHI TIẾT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="oder-item">
+                <td>1</td>
+                <td>Trung</td>
+                <td>0987654321</td>
+                <td>
+                    <p>200,000</p>
+                    <p> VND</p>
+                </td>
+                <td>Thanh toán khi nhận hàng</td>
+                <td>Đang chờ</td>
+                <td>Giao hàng nhanh</td>
+                <td>2021/12/12</td>
+                <td>
+                    <button class="btn btn-strest" onclick="showOrderDetails()">>></button>
+                </td>
+            </tr>
+            <tr class="oder-item">
+                <td>1</td>
+                <td>Trung</td>
+                <td>0987654321</td>
+                <td>
+                    <p>200,000</p>
+                    <p> VND</p>
+                </td>
+                <td>Thanh toán khi nhận hàng</td>
+                <td>Đang chờ</td>
+                <td>Giao hàng chậm</td>
+                <td>2021/12/12</td>
+                <td>
+                    <button class="btn btn-strest" onclick="showOrderDetails()">>></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="order__details" id="order-details">
+    <button class="btn btn-strest order__details--close" onclick="hideOrderDetails()">x</button>
+    <h2>HOÁ ĐƠN MUA HÀNG</h2>
+    <div>
+        <div>
+            <p>Địa chỉ người nhận</p>
+            <p>Họ tên: Trung</p>
+            <p>23 Tuy Quái, P.Như Hoa, Cảnh Bình Nguyên</p>
+            <p>SĐT: 098654321</p>
+        </div>
+        <div>
+            <p>Thanh toán khi nhận hàng</p>
+            <p>Giao hàng nhanh</p>
+            <p>Ngày giao hàng</p>
+            <p>Ghi chú</p>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Tổng tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="oder-item">
+                <td>1</td>
+                <td>Bàn phím ek</td>
+                <td>2</td>
+                <td>400,000 VND</td>
+            </tr>
+            <tr class="oder-item">
+                <td>2</td>
+                <td>Bàn phím ek</td>
+                <td>1</td>
+                <td>200,000 VND</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>Ngày đặt hàng: 2021/12/12</h4>
+    <h3>Số tiền phải trả: 200,000 VND</h3>
+
+</div>
