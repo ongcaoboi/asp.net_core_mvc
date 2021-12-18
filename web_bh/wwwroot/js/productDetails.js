@@ -1,3 +1,4 @@
+checkQuantity();
 function openTab(str) {
   var tab = document.getElementsByClassName("tablinks");
   for (var i = 0; i < tab.length; i++) {
@@ -16,7 +17,7 @@ function openTab(str) {
 }
 openTab('description');
 
-function quantity(num){
+function quantityChange(num){
   var quantity = document.getElementById('quantity');
   var max = Number(quantity.getAttribute('max'));
   var min = Number(quantity.getAttribute('min'));
@@ -29,5 +30,17 @@ function quantity(num){
     if(qa < max){
       quantity.value++;
     }
+  }
+  checkQuantity();
+}
+function checkQuantity(){
+  var q_ = document.getElementById('quantity');
+  if(Number(q_.value) == 0){
+  document.getElementById('add_to_cart').disabled = true;
+  document.getElementById('add_to_cart').style.cursor = "not-allowed";
+  }
+  else{
+  document.getElementById('add_to_cart').disabled = false;
+  document.getElementById('add_to_cart').style.cursor = "pointer";
   }
 }

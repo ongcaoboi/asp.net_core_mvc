@@ -167,12 +167,12 @@
         <p>500,000 VDN</p>
         <h3>Số lượng</h3>
         <div class="product__quantity">
-          <button onclick="quantity(-1)">-</button>
-          <input name="quantity" id="quantity" type="number" value="1" min="1" max="10">
-          <button onclick="quantity(1)">+</button>
+          <button onclick="quantityChange(-1)">-</button>
+          <input name="quantity" id="quantity" type="number" value="1" min="0" max="10">
+          <button onclick="quantityChange(1)">+</button>
         </div>
-        <button class="btn btn-green">Thêm vào giỏ hàng</button>
-        <button class="btn btn-strest">Xem giỏ hàng</button>
+        <button id="add_to_cart" onclick="dem()" class="btn btn-green">Thêm vào giỏ hàng</button>
+        <a class="btn btn-strest">Xem giỏ hàng</a>
       </div></div>
       <div class="product__info">
         <div class="tab__list">

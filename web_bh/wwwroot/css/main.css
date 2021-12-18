@@ -99,6 +99,7 @@ html {
 .header__right {
 	display: flex;
 	flex-wrap: wrap;
+  justify-content: center;
 }
 .header__right > div {
   position: relative;
@@ -299,6 +300,7 @@ html {
 	height: 220px;
 }
 .row__item > div:last-child {
+  max-width: 220px;
   padding: 10px;
   text-align: left;
 }
@@ -383,7 +385,12 @@ html {
   .footer > .footer__item {
     width: 80%;
   }
-  
+  .row__item > div:last-child {
+    max-width: 150px;
+  }
+  .header__search {
+    right: -20px;
+  }
   .row__item > div > img {
     width: 150px;
     height: 150px;

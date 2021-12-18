@@ -43,6 +43,9 @@
 .container .page a:hover {
   background-color: #1bc323;
 }
+.page__active a {
+  background-color: #1bc323;
+}
 .container .page > div {
   display: flex;
 }

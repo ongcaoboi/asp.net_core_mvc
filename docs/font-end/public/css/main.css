@@ -299,6 +299,7 @@ html {
 	height: 220px;
 }
 .row__item > div:last-child {
+  max-width: 220px;
   padding: 10px;
   text-align: left;
 }

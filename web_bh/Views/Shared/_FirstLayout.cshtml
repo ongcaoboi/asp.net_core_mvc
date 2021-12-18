@@ -1,3 +1,10 @@
+@* @using Microsoft.EntityFrameworkCore
+@using System.Data *@
+
+@inject web_bhContext dbContext
+@{
+  List<Category> catergory_ls = dbContext.Categories.ToList();
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +15,9 @@
 
 <!-- Nhúng các file css cho trang web -->
   <link rel="stylesheet" href="~/css/main.css" />
-  <link rel="stylesheet" href="~/css/home.css" />
+
   @RenderSectionAsync("css", required: false)
+
 <!--  -->
   <title>@ViewData["Title"] | PN Shop</title>
 </head>
@@ -74,26 +82,21 @@
         <span></span>
       </div>
       <div id="list-category">
-        <a asp-controller="Product" asp-action="Index">Danh mục</a>
+        <a>Danh mục</a>
         <span></span>
         <div class="header__list">
           <ul>
             <li>
-              <a href="">Bàn phím</a>
+              <a asp-controller="Product" asp-action="Index">Tất cả</a>
               <span></span>
             </li>
+          @foreach (var item in catergory_ls)
+          { 
             <li>
-              <a href="">Chuột</a>
+              <a href="/Product?id=@item.Id">@item.Name</a>
               <span></span>
             </li>
-            <li>
-              <a href="">Tai nghe</a>
-              <span></span>
-            </li>
-            <li>
-              <a href="">Webcam</a>
-              <span></span>
-            </li>
+          }
           </ul>
         </div>
       </div>
@@ -136,8 +139,8 @@
       <div id="list-search">
         <a>Tìm kiếm</a>
         <span></span>
-        <form action="#" class="header__search" method="post">
-          <input class="search__content" type="text" name="search-content" maxlength="200">
+        <form action="/Product/Search" class="header__search" method="get">
+          <input class="search__content" type="text" name="q" maxlength="200">
           <input type="submit" value="Tìm">
         </form>
       </div>
@@ -160,15 +163,16 @@
     <div class="footer__item">
       <h2>Sản phẩm</h2>
       <div>
-        <a href="">Bàn phím</a>
-        <a href="">Tai nghe</a>
-        <a href="">Chuột</a>
+          @foreach (var item in catergory_ls)
+          { 
+        <a href="/Product?id=@item.Id">@item.Name</a>
+          }
       </div>
     </div>
     <div class="footer__item">
       <h2>Liên hệ</h2>
       <div>
-        <p>Địa chỉ: <a href="">170 An Dương Vương, TP Quy Nhơn, Bình Định</a></p>
+        <p>Địa chỉ: <a href="https://goo.gl/maps/C8Q69RJWWofJnb2m9" target="_blank">170 An Dương Vương, TP Quy Nhơn, Bình Định</a></p>
         <p>SĐT: <a href="tel:0987654321">0987654321</a></p>
         <p>Fanpage: <a href="https://www.facebook.com/dhquynhon" target="_blank">https://www.facebook.com/dhquynhon</a></p>
       </div>
