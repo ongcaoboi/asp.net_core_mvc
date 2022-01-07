@@ -16298,6 +16298,11 @@
   "RootNamespace": "web_bh",
   "Documents": [
     {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\ProductManager\\Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\ProductManager\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16328,8 +16333,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\ProductManager\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\ProductManager\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\Shared\\_FirstLayout.cshtml",
       "TargetPath": "Views\\Shared\\_FirstLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\CategoryManager\\Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryManager\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\CategoryManager\\Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryManager\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\CategoryManager\\Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryManager\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16338,13 +16363,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\CategoryManager\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryManager\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\Cart\\Index.cshtml",
       "TargetPath": "Views\\Cart\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\Contact\\Index.cshtml",
-      "TargetPath": "Views\\Contact\\Index.cshtml",
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16353,8 +16383,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\ProductManager\\Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\ProductManager\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\ProductManager\\Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\ProductManager\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\OrderManager\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\OrderManager\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16363,8 +16413,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\Contac\\Index.cshtml",
+      "TargetPath": "Views\\Contac\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\MyAdmin\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\MyAdmin\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\ProductManager\\Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\ProductManager\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\HocTap\\HK_I_2021-2022\\ASP.NET\\BaiTapCuoiKy\\web_bh\\Areas\\Admin\\Views\\CategoryManager\\Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryManager\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

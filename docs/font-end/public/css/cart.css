@@ -60,12 +60,16 @@
   width: 50px;
   height: 50px;
 }
-.cart__product > a {
+.cart__product  a {
   /* position: absolute; */
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  overflow: unset;
   /* transform: translateY(10px); */
   padding: 0 10px;
 }

@@ -54,6 +54,12 @@
                     <a href="/Product/Details?id=@item.id">Xem</a>
                     <a><img src="~/img/cart.png" alt=""></a>
                 </div>
+            @if(item.quantity == 0)
+            {
+                <div class="product__over">
+                <a>Hết hàng</a>
+                </div>
+            }
             </div>
             <div>
                 <p>@item.nameCate</p>

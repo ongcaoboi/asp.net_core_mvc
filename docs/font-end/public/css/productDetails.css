@@ -21,16 +21,20 @@
   text-align: center;
   display: flex;
 }
-.left > img {
-  width: 80%;
+.left > img.img_main {
+  height: 500px;
+  width: 500px;
 }
 .left > .list__img {
+  max-height: 500px;
+  width: 250px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  overflow: auto;
 }
 .list__img > img {
-  width: 80%;
+  width: 100%;
   margin-bottom: 5%;
 }
 .main .right {

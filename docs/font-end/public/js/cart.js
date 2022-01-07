@@ -1,4 +1,5 @@
-reloadPrice()
+reloadPrice();
+console.log('g');
 function quantity(num_ , num){
   var quantity = document.getElementById('quantity-'+num_);
   var max = Number(quantity.getAttribute('max'));

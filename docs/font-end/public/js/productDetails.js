@@ -47,3 +47,8 @@ function checkQuantity(){
     document.getElementById('add_to_cart').style.cursor = "pointer";
   }
 }
+
+function getImg(index){
+  // console.log(index.src);
+  document.getElementById("img_main").src = index.src;
+}

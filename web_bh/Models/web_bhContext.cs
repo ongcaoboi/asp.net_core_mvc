@@ -140,10 +140,6 @@ namespace web_bh.Models
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.CreatedAt)
-                    .HasColumnType("datetime")
-                    .HasColumnName("created_at");
-
                 entity.Property(e => e.Description)
                     .HasColumnType("ntext")
                     .HasColumnName("description");
@@ -162,10 +158,6 @@ namespace web_bh.Models
                 entity.Property(e => e.Title)
                     .HasMaxLength(250)
                     .HasColumnName("title");
-
-                entity.Property(e => e.UpdatedAt)
-                    .HasColumnType("datetime")
-                    .HasColumnName("updated_at");
 
                 entity.HasOne(d => d.IdCategoryNavigation)
                     .WithMany(p => p.Products)

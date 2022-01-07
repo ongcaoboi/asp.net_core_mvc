@@ -1,5 +1,7 @@
+@model List<web_bh.Models.Product>
 @{
     ViewData["Title"] = "Giỏ hàng";
+    int count = 1;
 }
 @section css {
 <link rel="stylesheet" href="~/css/cart.css">
@@ -13,7 +15,6 @@
 </div>
 <div class="cart">
     <div class="cart__body">
-        <p id="numArr" hidden="hidden">2</p>
         <table>
             <thead>
                 <tr>
@@ -26,63 +27,60 @@
                 </tr>
             </thead>
             <tbody id="cart-body">
-                <tr id="item-0">
-                    <td>1</td>
+            @foreach (var item_ in Model?.ToList())
+            {
+                int sl = 1;
+                foreach(var item in ViewBag.cart)
+                {
+                    if(item.id_product == item_.Id)
+                    {
+                        sl = item.quantity;
+                    }
+                }
+                <tr id="item-@count">
+                    <td>@count</td>
                     <td class="cart__product">
-                        <img src="~/img/ban-phim.jpg" alt="">
-                        <a href="">Bàn phím ek</a>
+                        <img src="~/img/product/@item_.Thumbnail" alt="">
+                        <a href="/Product/Details?id=@item_.Id" style=" overflow-x: hidden;">@item_.Title</a>
                     </td>
                     <td>
-                        <p id="price-item-0">200,000</p>
+                        <p id="price-item-@count">@string.Format("{0:0,0}", item_.Price)</p>
                         <p> VND</p>
                     </td>
                     <td class="cart__quantity">
                         <div class="product__quantity">
-                            <button class="btn btn-strest" onclick="quantity(0,-1)">-</button>
-                            <input name="quantity" id="quantity-0" type="number" value="1" min="1" max="10">
-                            <button class="btn btn-strest" onclick="quantity(0,1)">+</button>
+                            <button class="btn btn-strest" onclick="quantity(@count, -1, @item_.Id)">-</button>
+                            <input name="quantity" id="quantity-@count" type="number" value="@sl" min="0" max="@item_.Quantity">
+                            <button class="btn btn-strest" onclick="quantity(@count, 1, @item_.Id)">+</button>
                         </div>
                     </td>
                     <td>
-                        <p id="sum-item-0"></p>
+                        <p id="sum-item-@count"></p>
                         <p> VND</p>
                     </td>
                     <td>
-                        <button class="btn btn-strest" onclick="removeCartItem(0)">x</button>
+                        <button class="btn btn-strest" onclick="removeCartItem(@count, @item_.Id)">x</button>
                     </td>
                 </tr>
-                <tr id="item-1">
-                    <td>2</td>
-                    <td class="cart__product">
-                        <img src="~/img/ban-phim.jpg" alt="">
-                        <a href="">Bàn phím ek</a>
-                    </td>
-                    <td>
-                        <p id="price-item-1">200,000</p>
-                        <p> VND</p>
-                    </td>
-                    <td class="cart__quantity">
-                        <div class="product__quantity">
-                            <button class="btn btn-strest" onclick="quantity(1,-1)">-</button>
-                            <input name="quantity" id="quantity-1" type="number" value="1" min="1" max="10">
-                            <button class="btn btn-strest" onclick="quantity(1,1)">+</button>
-                        </div>
-                    </td>
-                    <td>
-                        <p id="sum-item-1"></p>
-                        <p> VND</p>
-                    </td>
-                    <td>
-                        <button class="btn btn-strest" onclick="removeCartItem(1)">x</button>
-                    </td>
-                </tr>
+
+                count = count + 1;
+            }
             </tbody>
         </table>
+        @if(!Model.Any()){
+            <p style="margin: 10px;">Không có sản phẩm nào trong giỏ hàng của bạn!
+                <a href="/Product">Bấm vào đây để xem thêm sản phẩm!</a>
+            </p>
+        }
+        <p id="numArr" hidden="hidden">@count</p>
     </div>
     <div class="cart__bottom">
-        <a asp-controller="Product" asp-action="Index">
-            << Tiếp tục mua hàng</a>
-                <a asp-controller="Checkout" asp-action="Index">Thanh toán ></a>
+        <a asp-controller="Product" asp-action="Index"><< Tiếp tục mua hàng</a>
+    @if(!Model.Any()){
+        <a style="cursor: not-allowed;">Thanh toán ></a>
+    }else{
+        <a asp-controller="Checkout" asp-action="Index" id="checkout">Thanh toán ></a>
+    }
     </div>
 </div>
 <div class="right">
@@ -98,16 +96,16 @@
                 </td>
             </tr>
             <tr>
-                <td>Phí vận chuyển nhanh</td>
+                <td>Phí vận chuyển miễn phí</td>
                 <td>
-                    <p id="shipping-price">40,000</p>
+                    <p id="shipping-price">0</p>
                     <p> VND</p>
                 </td>
             </tr>
             <tr>
                 <td>Thuế</td>
                 <td>
-                    <p id="tax">3</p>
+                    <p id="tax">0</p>
                     <p>%</p>
                 </td>
             </tr>

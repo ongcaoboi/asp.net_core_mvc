@@ -17,7 +17,7 @@ public class ProductController : Controller
 
     public IActionResult Index(int? id, int p = 1)
     {
-        int size = 2;
+        int size = 5;
         ViewData["IsCate"] = 0;
         if(id == null && id != 0)
         {   
@@ -92,7 +92,7 @@ public class ProductController : Controller
 
     public IActionResult Search(string? q, int p = 1)
     {
-        int size = 2;
+        int size = 5;
         if(q == null)
         {
             ViewData["Title"] = "Tất cả";

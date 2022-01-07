@@ -15,6 +15,62 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\HocTap\HK_I_2021-2022\ASP.NET\BaiTapCuoiKy\web_bh
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/CategoryManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlNYW5hZ2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/CategoryManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlNYW5hZ2VyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/CategoryManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlNYW5hZ2VyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/CategoryManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlNYW5hZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/CategoryManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlNYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/MyAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTXlBZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/OrderManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJNYW5hZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/ProductManager/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/ProductManager/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/ProductManager/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/ProductManager/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/ProductManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -27,8 +83,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Views/Contact/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+[E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Views/Contac/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/HocTap/HK_I_2021-2022/ASP.NET/BaiTapCuoiKy/web_bh/Views/Home/Index.cshtml]

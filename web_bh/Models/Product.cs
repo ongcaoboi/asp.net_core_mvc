@@ -18,8 +18,6 @@ namespace web_bh.Models
         public string Thumbnail { get; set; } = null!;
         public string Description { get; set; } = null!;
         public int Quantity { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
 
         public virtual Category IdCategoryNavigation { get; set; } = null!;
         public virtual ICollection<Gallery> Galleries { get; set; }

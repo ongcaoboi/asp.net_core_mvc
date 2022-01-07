@@ -1,4 +1,4 @@
-I, Phân tích dự án
+ Phân tích dự án
 -Font-end:
 	-Trang chủ +
 	-Trang danh sách sản phẩm  +
@@ -10,15 +10,9 @@ I, Phân tích dự án
 	-Trang đơn hàng của tôi +
 -Adim:
 	-Tài khoản người dùng:
-		-Quản lý quền (admin, user)
-		-Quản lý người dùng
 		-Đăng ký tài khoản 
 		-Đăng nhập
 	-Quản lý danh mục sản phẩm
 	-Quản lý sản phẩm
 	-Quản lý đơn hàng
 		-Hiển thị danh sách đơn hàng(quản lý đc trạng thái đơn hàng
-	-Quản lý phản hồi
-
-
-II, Xây dựng databases +
