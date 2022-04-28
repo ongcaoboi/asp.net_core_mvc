@@ -79,6 +79,7 @@ html {
 /* HEADER START */
 
 .header {
+    height: 50px!important;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -95,6 +96,10 @@ html {
 .header > a {
 	text-decoration: none;
 	font-size: 30px;
+}
+.header > a > img {
+    width: 200px!important;
+    height: 50px!important;
 }
 .header__right {
 	display: flex;
@@ -309,6 +314,7 @@ html {
     padding: 0;
 }
 .row__item > div > p {
+    cursor: context-menu;
     position: absolute;
     top: 10px;
     background-color: #8e1414;
@@ -329,6 +335,7 @@ html {
 }
 .row__item > div > h2 {
   color: red;
+  font-weight: normal;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -338,6 +345,7 @@ html {
   font-size: 20px;
   padding-top: 5px;
   font-weight: bold;
+  color: black;
   display: -webkit-box;
     max-height: 3.2rem;
    -webkit-box-orient: vertical;
@@ -346,6 +354,9 @@ html {
     white-space: normal;
     -webkit-line-clamp: 2;
     line-height: 1.6rem;
+}
+.row__item > div > a:hover:active:link:visited {
+    color: black;
 }
 .product__hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -537,6 +548,9 @@ html {
     }
     .row {
         justify-content: space-around;
+    }
+    #list-account {
+        margin-right: 20px;
     }
 }
 

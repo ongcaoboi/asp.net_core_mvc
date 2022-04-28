@@ -35,7 +35,7 @@
   @await RenderSectionAsync("css", required: false)
 
 <!--  -->
-  <title>@ViewData["Title"] | PN Shop</title>
+  <title>@ViewData["Title"] | Cận GEAR</title>
 </head>
 
 <body>
@@ -98,7 +98,9 @@
 <!-- Bắt đầu phần menu header -->
         <label class="btn btn-menu-m" for="check-menu-m">=</label>
   <nav class="header">
-    <a asp-controller="Home" asp-action="Index">PN Shop</a>
+      <a asp-controller="Home" asp-action="Index">
+          <img src="~/img/logo_3.gif" alt="">
+      </a>
     <div class="header__right">
       <div>
         <a class="home-item" asp-controller="Home" asp-action="Index">Trang chủ</a>

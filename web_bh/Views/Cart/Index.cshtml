@@ -77,7 +77,7 @@
     <div class="cart__bottom">
         <a asp-controller="Product" asp-action="Index"><< Tiếp tục mua hàng</a>
     @if(!Model.Any()){
-        <a style="cursor: not-allowed;">Thanh toán ></a>
+        <a style="cursor: not-allowed;">Đặt hàng</a>
     }else{
         <a asp-controller="Checkout" asp-action="Index" id="checkout">Thanh toán ></a>
     }
