@@ -24,10 +24,10 @@
   border-radius: 5px;
 }
 .news {
-  margin: 100px 0;
-  padding-bottom: 20px;
+  margin: 20px 0;
 }
 .news > h2 {
+    margin: 10px;
   text-align: center;
 }
 .row {
@@ -37,7 +37,10 @@
 	position: relative;
 	text-align: center;
   padding-bottom: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+.category__item > h2 {
+    margin-bottom: 10px;
 }
 .category__item > a {
 	position: absolute;

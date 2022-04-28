@@ -38,7 +38,7 @@
         <input type="hidden" id="id_product" value="@Model?.Id">
     }
         <h3>Giá</h3>
-        <p>@string.Format("{0:0,0}",Model?.Price) VND</p>
+        <p>@string.Format("{0:0,0}",Model?.Price) đ</p>
         <h3>Số lượng</h3>
         <div class="product__quantity">
             <button onclick="quantityChange(-1)">-</button>
@@ -109,7 +109,7 @@
             <div>
                 <p>@item.nameCate</p>
                 <a href="/Product/Details?id=@item.id">@item.title</a>
-                <h2>@string.Format("{0:0,0}", item.price) VND</h2>
+                <h2>@string.Format("{0:0,0}", item.price) đ</h2>
             </div>
         </div>
         }

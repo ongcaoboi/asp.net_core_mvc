@@ -32,7 +32,7 @@
 <!-- Nhúng các file css cho trang web -->
   <link rel="stylesheet" href="~/css/main.css" />
 
-  @RenderSectionAsync("css", required: false)
+  @await RenderSectionAsync("css", required: false)
 
 <!--  -->
   <title>@ViewData["Title"] | PN Shop</title>
@@ -96,11 +96,12 @@
   </a>
 }
 <!-- Bắt đầu phần menu header -->
+        <label class="btn btn-menu-m" for="check-menu-m">=</label>
   <nav class="header">
     <a asp-controller="Home" asp-action="Index">PN Shop</a>
     <div class="header__right">
       <div>
-        <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+        <a class="home-item" asp-controller="Home" asp-action="Index">Trang chủ</a>
         <span></span>
       </div>
       <div id="list-category">
@@ -123,7 +124,7 @@
         </div>
       </div>
       <div>
-        <a asp-controller="Contac" asp-action="Index">Liên hệ</a>
+        <a class="contact-item" asp-controller="Contac" asp-action="Index">Liên hệ</a>
         <span></span>
       </div>
       <div id="list-account">
@@ -185,7 +186,37 @@
     </div>
   </nav>
 <!-- Kết thúc phần menu header -->
-
+<!-- Mở đầu phần menu mobile -->
+    <input type="checkbox" id="check-menu-m">
+    <div class="menu-m">
+        <div>
+            <a href="/">Trang chủ</a>
+        </div>
+        <div id="list-category-m">
+            <a>Danh mục</a>
+            <div class="header__list-m">
+              <ul>
+                <li>
+                  <a asp-controller="Product" asp-action="Index">Tất cả</a>
+                </li>
+              @foreach (var item in catergory_ls)
+              { 
+                <li>
+                  <a href="/Product?id=@item.Id">@item.Name</a>
+                </li>
+              }
+              </ul>
+            </div>
+        </div>
+        <div>
+            <a href="/Contac">Liên hệ</a>
+        </div>
+    </div>
+    <form action="/Product/Search" class="search-m" method="get">
+        <input class="search__content" placeholder="Tìm kiếm trên shop" type="text" name="q" maxlength="200">
+        <input type="submit" value="Tìm">
+    </form>
+<!-- Kết thúc phần menu mobile -->
 <!-- Mở đầu phần nội dung trang web -->
   <div class="container">
     @RenderBody()

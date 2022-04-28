@@ -53,7 +53,7 @@
                 <td>@item.Address</td>
                 <td>
                     <p>@string.Format("{0:0,0}", total)</p>
-                    <p> VND</p>
+                    <p> đ</p>
                 </td>
                 <td>Thanh toán khi nhận hàng</td>
                 <td>@status</td>
@@ -119,7 +119,7 @@ int total_ = 0;
                 <td>@stt</td>
                 <td>@name</td>
                 <td>@item_4.Num</td>
-                <td>@string.Format("{0:0,0}", item_4.TotalMoney) VND</td>
+                <td>@string.Format("{0:0,0}", item_4.TotalMoney) đ</td>
             </tr>
             total_ += (int)item_4.TotalMoney;
             stt++;       
@@ -128,7 +128,7 @@ int total_ = 0;
         </tbody>
     </table>
     <h4>Ngày đặt hàng: @item_3.OrderDate</h4>
-    <h3>Số tiền phải trả: @string.Format("{0:0,0}", total_) VND</h3>
+    <h3>Số tiền phải trả: @string.Format("{0:0,0}", total_) đ</h3>
 
 </div>
 }
